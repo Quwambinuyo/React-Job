@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { FaMapMarker } from "react-icons/fa";
 
 const JobListing = ({ Job }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -33,7 +34,7 @@ const JobListing = ({ Job }) => {
 
         <div className="flex flex-col justify-between mb-4 lg:flex-row">
           <div className="mb-3 text-orange-700">
-            <i className="text-lg fa-solid fa-location-dot"></i>
+            <FaMapMarker className="inline mb-2 mr-1 text-lg" />
             {Job.location}
           </div>
           <a
