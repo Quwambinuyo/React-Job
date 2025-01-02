@@ -27,7 +27,7 @@ const App = () => {
     return;
   };
 
-  //Delete Job
+  //Delete Jobs
 
   const deleteJob = async (id) => {
     try {
